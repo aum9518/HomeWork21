@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public interface FindCapacity {
+public interface FindCapacity {
+    double findSquare();
+    double findCapacity();
+    double findSquareCylinder();
+    double findCapacityCylinder();
 }
