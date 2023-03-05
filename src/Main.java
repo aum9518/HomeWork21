@@ -31,7 +31,30 @@ public class Main {
                     throw new Exeption("Can not use negative number");
                 }
 
-                Parallelepiped parallelepiped = new Parallelepiped();
+                Parallelepiped parallelepiped = new Parallelepiped(height,length,width);
+                System.out.println(" Square of Parallelepiped: "+parallelepiped.findSquare());
+                System.out.println(" Capacity of Parallelepiped: "+parallelepiped.findCapacity());
+            } else if (chooseOption==2) {
+                System.out.println("Enter radius of Cylinder: ");
+                double radius = in.nextDouble();
+                if (radius>0){
+
+                    System.out.println("Correct ");
+                }else {
+                    throw new Exeption("Con not use negative number");
+                }
+                System.out.println("Enter height of Cylinder: ");
+                double height = in.nextDouble();
+                if (height>0){
+                    System.out.println("Correct ");
+                }else {
+                    throw new Exeption("Con not use negative number");
+                }
+                Cylinder cylinder = new Cylinder(radius,height);
+                System.out.println(" Capacity of Cylinder: "+cylinder.findCapacityCylinder());
+                System.out.println(" Square of Cylinder: "+cylinder.findSquareCylinder());
+            }else {
+                System.out.println("nut such a option");
             }
         } catch (Exeption e) {
             System.out.println(e.getMessage());

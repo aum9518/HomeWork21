@@ -3,6 +3,34 @@ public class Cylinder implements FindCapacity{
     private double height;
     final private double PI = Math.PI;
 
+    public Cylinder() {
+    }
+
+    public Cylinder(double radius, double height) {
+        this.radius = radius;
+        this.height = height;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getPI() {
+        return PI;
+    }
+
     @Override
     public double findSquare() {
         return 0;
